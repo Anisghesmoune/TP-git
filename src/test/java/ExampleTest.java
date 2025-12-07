@@ -6,5 +6,5 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "Features",plugin={"json:reports/example-report.json"}
 )
 public class ExampleTest {
-
+// This class will be empty
 }

@@ -106,4 +106,23 @@ public class Matrix {
     return super.hashCode();
   }
 
+  // Additional methods can be added here
+  public String toString() {
+	  StringBuilder sb = new StringBuilder();
+	  for (int i = 0; i < nrows; i++) {
+		  sb.append("[");
+		  for (int j = 0; j < ncols; j++) {
+			  sb.append(data[i][j]);
+			  if (j < ncols - 1) {
+				  sb.append(", ");
+			  }
+		  }
+		  sb.append("]");
+		  if (i < nrows - 1) {
+			  sb.append("\n");
+		  }
+	  }
+	  return sb.toString();
+  }
+
 }
